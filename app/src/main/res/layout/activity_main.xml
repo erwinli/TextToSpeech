@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TTS"
+        android:id="@+id/button"
+        android:onClick="testTTS"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="English French German"
+        android:ems="10"
+        android:id="@+id/editText1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp"
+        android:layout_alignParentEnd="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar1"
+        android:layout_above="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarSpeed"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Speech Speed"
+        android:id="@+id/textView"
+        android:layout_above="@+id/seekBarSpeed"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pitch"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/seekBar1"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="German"
+        android:id="@+id/buttonGerman"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:onClick="setGerman" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Canada French"
+        android:id="@+id/buttonFrench"
+        android:layout_above="@+id/buttonGerman"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:onClick="setFrench" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="US"
+        android:id="@+id/buttonUS"
+        android:layout_above="@+id/buttonFrench"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:onClick="setUS" />
+
+</RelativeLayout>
